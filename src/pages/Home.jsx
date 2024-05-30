@@ -32,12 +32,12 @@ const Home = () => {
       <Box p={4} display="flex" alignItems="center" justifyContent="center" h="100vh" w="100vw" position="fixed" backgroundSize="cover"
          backgroundPosition="center" boxShadow='10px 10px 5px 5px rgba(0,0,0,0.5)' backgroundImage="url('/path/to/your/WhatsApp.jpg')"
       >
-         <VStack spacing={4} w="80%" bg="green.300" h="80%" display="flex" justifyContent="space-around" borderRadius="lg" boxShadow="lg" p={6}>
+         <VStack spacing={4} w="80%" bg="green.300" h="60%" display="flex" justifyContent="space-around" borderRadius="lg" boxShadow="lg" p={6}>
             <Heading color="white">Click to Chat</Heading>
             <Text color="white" textAlign="center" mb={4}>
                Enter your phone number below and click the button to start a WhatsApp chat.
             </Text>
-            <VStack display="flex" jaroundustifyContent="space-" h="60%">
+            <VStack display="flex" jaroundustifyContent="space-" h="50%">
                <PhoneInput
                   country={'ke'}
                   value={phone}
