@@ -37,7 +37,7 @@ const Home = () => {
             <Text color="white" textAlign="center" mb={4}>
                Enter your phone number below and click the button to start a WhatsApp chat.
             </Text>
-            <VStack display="flex" jaroundustifyContent="space-" h="50%">
+            <VStack display="flex" gap='50px' h="50%">
                <PhoneInput
                   country={'ke'}
                   value={phone}
