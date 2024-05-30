@@ -1,10 +1,13 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Divider } from '@chakra-ui/react';
+import Foter from './Foter';
 
 const About = () => {
   return (
-    <Box pt={{base:"60px", md:'none'}}p={{base:"" ,md:"4"}} display="flex" alignItems="center" justifyContent="center"  bg="gray.100" h={{base:'100vh', md:'100vh'}} position='fixed'  w={{base:'100vw', md:'100vw'}}>
-      <VStack spacing={4} align="stretch"  p={8} bg="white" borderRadius="md" boxShadow="lg">
+    <Box pt={{base:"15em", md:''}}p={{base:"" ,md:"4"}} display="flex" alignItems="center" justifyContent="center"  bg="gray.100" h={{base:'100vh', md:'100vh'}} overflowX='auto'  w={{base:'100vw', md:'100vw'}}>
+     <VStack  display='flex'w='99%' h='100%' justifyContent='space-between' >
+
+      <VStack spacing={4}   p={8} bg="white" borderRadius="md" boxShadow="lg"  display='flex' justifyContent='center' h={{base:"", md:"95%"}}>
         <Heading as="h1" size="xl" textAlign="center" color='green.400'>About Click to Chat</Heading>
         <Divider />
         <Text fontSize="lg">
@@ -31,6 +34,9 @@ const About = () => {
           We are a team of developers passionate about creating tools that enhance productivity and simplify daily tasks. Click to Chat is one of our projects aimed at making communication easier and more efficient.
         </Text>
       </VStack>
+      <Foter/>
+      </VStack>
+
     </Box>
   );
 };
