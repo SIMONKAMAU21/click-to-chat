@@ -7,7 +7,7 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+    <Box bg={useColorModeValue('green.300', 'green.900')} px={4} position='fixed' zIndex='1000' width={{base:"100vw", md:"100vw"}}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <IconButton
           size="md"
@@ -18,7 +18,7 @@ const NavBar = () => {
         />
         <HStack spacing={8}  justifyContent={{base:'none' , md:'space-between'}} w='100%' alignItems="center" >
           <Box fontWeight='bold'>Click to Chat</Box>
-          <HStack as="nav" spacing={4} display={{ base: 'none', md: 'flex' }} bg='yellow'>
+          <HStack as="nav" spacing={4} display={{ base: 'none', md: 'flex' }} >
             <NavLink to="/" style={{ textDecoration: 'none' }} activeStyle={{ fontWeight: 'bold' }}>
               Home
             </NavLink>
