@@ -5,12 +5,13 @@ import Navbar from './layouts/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Foter from './pages/Foter'
 
 function App() {
-  const appStyles={
-with:'100vw',
-h:"100vh"
-  }
+//   const appStyles={
+// with:'100vw',
+// h:"100vh"
+//   }
 
   return (
     <>
@@ -21,8 +22,8 @@ h:"100vh"
       <Route path='/About' element={<About/>} />
     </Routes>
     </BrowserRouter>
-    <Box sx={appStyles}>
-    </Box>
+    {/* <Box sx={appStyles}>
+    </Box> */}
     </>
   )
 }
